@@ -41,7 +41,10 @@ export default function Login() {
   });
   const onSubmit = async (data: any) => {
     try {
-      const res = await axios.post("http://localhost:5000/api/login", data);
+      const res = await axios.post(
+        "https://chat-app-indol-two-24.vercel.app/api/login",
+        data
+      );
       if (res.data.success === true) {
         Cookie.set("token", res.data.token);
         Cookie.set("user", JSON.stringify(res?.data?.data));

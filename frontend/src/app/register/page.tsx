@@ -65,7 +65,7 @@ export default function Page() {
   const onSubmit = async (data: any) => {
     try {
       const res: any = await axios.post(
-        "http://localhost:5000/api/register",
+        "https://chat-app-indol-two-24.vercel.app/api/register",
         data
       );
       if (res?.data?.success === true) {

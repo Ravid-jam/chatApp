@@ -23,7 +23,7 @@ export default function AllUserList({
               setRoomData(items);
               try {
                 const res = await axios.get(
-                  `http://localhost:5000/api/getMessage/${user._id}/${items._id}`
+                  `https://chat-app-indol-two-24.vercel.app/api/getMessage/${user._id}/${items._id}`
                 );
                 setAllMessage(res?.data?.data);
               } catch (err) {

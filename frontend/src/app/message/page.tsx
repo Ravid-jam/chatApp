@@ -75,7 +75,7 @@ export default function Page() {
   const handleDeleteMsg = (messageId: string) => {
     try {
       axios
-        .delete(`http://localhost:5000/api/deleteMsg/${messageId}`)
+        .delete(`https://chat-app-indol-two-24.vercel.app/api/deleteMsg/${messageId}`)
         .then((response) => {
           if (isConnected) {
             const data = {
