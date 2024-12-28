@@ -11,4 +11,4 @@ router.get("/logout", logout);
 router.get("/getMessage/:senderId/:receiverId", getMessage);
 router.delete("/deleteMsg/:id", deleteMsg);
 
-module.exports = router;
+module.exports.handler = router;

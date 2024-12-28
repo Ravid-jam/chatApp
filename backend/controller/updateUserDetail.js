@@ -26,4 +26,4 @@ async function updateUserDetail(req, res) {
   }
 }
 
-module.exports = updateUserDetail;
+module.exports.handler = updateUserDetail;

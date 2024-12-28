@@ -65,4 +65,4 @@ async function login(req, res) {
   }
 }
 
-module.exports = { registerUser, login };
+module.exports.handler = { registerUser, login };

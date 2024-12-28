@@ -49,4 +49,4 @@ const socketInit = (server) => {
   });
 };
 
-module.exports = socketInit;
+module.exports.handler = socketInit;

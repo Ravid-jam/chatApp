@@ -14,4 +14,4 @@ async function userDetails(req, res) {
   }
 }
 
-module.exports = userDetails;
+module.exports.handler = userDetails;

@@ -11,4 +11,4 @@ const getUserDetailFromToken = async (token) => {
   return user;
 };
 
-module.exports = getUserDetailFromToken;
+module.exports.handler = getUserDetailFromToken;

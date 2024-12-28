@@ -40,7 +40,7 @@ const deleteMsg = async (req, res) => {
   }
 };
 
-module.exports = {
+module.exports.handler = {
   getMessage,
   deleteMsg,
 };

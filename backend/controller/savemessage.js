@@ -60,6 +60,6 @@ const isDownloaded = async (data) => {
   }
 };
 
-module.exports = saveMessage;
+module.exports.handler = saveMessage;
 
-module.exports.isDownloaded = isDownloaded;
+module.exports.handler.isDownloaded = isDownloaded;
