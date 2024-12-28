@@ -14,7 +14,7 @@ const server = http.createServer(app);
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://chat-app-gnqw.vercel.app",
     credentials: true,
   })
 );
