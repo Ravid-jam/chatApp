@@ -31,7 +31,7 @@ import React, {
 } from "react";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
-import { fileToBase64 } from "./utils/utils";
+import { fileToBase64 } from "../../utils/utils";
 const schema = yup
   .object({
     message: yup.string(),

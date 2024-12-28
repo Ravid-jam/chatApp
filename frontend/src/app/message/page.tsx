@@ -1,7 +1,7 @@
 "use client";
 import MainLayout from "@/pages/components/MainLayout";
 import TextEditer from "@/pages/components/TextEditer";
-import socket from "@/pages/components/utils/socket";
+import socket from "@/utils/socket";
 import axios from "axios";
 import Cookie from "js-cookie";
 import { useEffect, useState } from "react";
@@ -75,7 +75,9 @@ export default function Page() {
   const handleDeleteMsg = (messageId: string) => {
     try {
       axios
-        .delete(`https://chat-app-indol-two-24.vercel.app/api/deleteMsg/${messageId}`)
+        .delete(
+          `https://chat-app-indol-two-24.vercel.app/api/deleteMsg/${messageId}`
+        )
         .then((response) => {
           if (isConnected) {
             const data = {

@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { fileToBase64 } from "@/pages/components/utils/utils";
+import { fileToBase64 } from "@/utils/utils";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
