@@ -13,10 +13,7 @@ const app = express();
 const server = http.createServer(app);
 
 app.use(
-  cors({
-    origin: "https://chat-app-gnqw.vercel.app",
-    credentials: true,
-  })
+  cors()
 );
 app.use(cors());
 
